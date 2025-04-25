@@ -106,16 +106,16 @@ class MainTest {
         vegetable.setId(2L);
         vegetable.setName("Carrot");
         vegetable.setPrice(20.0);
-        vegetable.setGrownOnTree(false);
+        vegetable.setIsGrownOneTree(false);
 
         assertEquals(2L, vegetable.getId());
         assertEquals("Carrot", vegetable.getName());
         assertEquals(20.0, vegetable.getPrice());
-        assertFalse(vegetable.isGrownOnTree());
+        assertFalse(vegetable.getIsGrownOneTree());
 
 
-        vegetable.setGrownOnTree(true);
-        assertTrue(vegetable.isGrownOnTree());
+        vegetable.setIsGrownOneTree(true);
+        assertTrue(vegetable.getIsGrownOneTree());
     }
 
     @Test
